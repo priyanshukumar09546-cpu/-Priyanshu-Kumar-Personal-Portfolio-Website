@@ -60,9 +60,9 @@ export const profileData: ProfileData = {
       detail: "Full-stack apps, compiler AST engines, AI models & developer tools published on GitHub",
     },
     {
-      value: "3",
+      value: "6",
       label: "Verified Live Deployments",
-      detail: "Production web applications active online (MentorNearby, CodeTrace, CampusPrep)",
+      detail: "Production web applications active online (MentorNearby, CodeTrace, CampusPrep, ScamShield AI, CropDetect AI, Supply-Chainer)",
     },
     {
       value: "19",

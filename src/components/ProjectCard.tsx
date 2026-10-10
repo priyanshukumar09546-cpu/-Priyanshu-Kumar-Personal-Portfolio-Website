@@ -99,10 +99,13 @@ export function ProjectCard({ project, priority = false }: { project: Project; p
         {/* Content Body */}
         <div className="p-6">
           <div className="mb-3">
-            <h3 className="text-xl font-bold text-zinc-900 dark:text-white tracking-tight group-hover:text-amber-500 dark:group-hover:text-amber-400 transition-colors">
+            <span className="text-[11px] font-mono font-bold tracking-widest text-amber-600 dark:text-amber-400 uppercase mb-1.5 block">
+              {project.category}
+            </span>
+            <h3 className="text-xl sm:text-2xl font-black text-zinc-900 dark:text-white tracking-tight group-hover:text-amber-500 dark:group-hover:text-amber-400 transition-colors">
               {project.title}
             </h3>
-            <p className="text-xs font-medium text-amber-600 dark:text-amber-400/90 mt-0.5">
+            <p className="text-xs font-medium text-zinc-600 dark:text-zinc-400 mt-1 leading-snug">
               {project.tagline}
             </p>
           </div>
@@ -126,7 +129,7 @@ export function ProjectCard({ project, priority = false }: { project: Project; p
             {project.stack.map((tech) => (
               <span
                 key={tech}
-                className="px-2 py-0.5 rounded-md text-[10px] sm:text-[11px] font-medium bg-black/[0.03] dark:bg-white/[0.04] text-zinc-700 dark:text-zinc-300 border border-black/[0.06] dark:border-white/[0.06]"
+                className="px-2.5 py-1 rounded-lg text-[11px] font-medium bg-black/[0.03] dark:bg-white/[0.04] text-zinc-700 dark:text-zinc-300 border border-black/[0.06] dark:border-white/[0.06] hover:border-amber-500/30 transition-colors"
               >
                 {tech}
               </span>
@@ -164,13 +167,13 @@ export function ProjectCard({ project, priority = false }: { project: Project; p
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`Open ${project.title} live deployment`}
-            className="flex-1 inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-semibold text-zinc-950 bg-amber-400 hover:bg-amber-300 dark:bg-amber-400 dark:hover:bg-amber-300 shadow-sm hover:shadow-glow-subtle transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+            className="flex-1 inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold text-zinc-950 bg-amber-400 hover:bg-amber-300 dark:bg-amber-400 dark:hover:bg-amber-300 shadow-sm hover:shadow-glow-subtle transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 group/btn"
           >
-            <ExternalLink className="w-3.5 h-3.5" />
             <span>Live Demo</span>
+            <span className="text-sm font-bold leading-none transition-transform duration-200 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5">↗</span>
           </a>
         ) : (
-          <div className="flex-1 inline-flex items-center justify-center py-2.5 rounded-xl text-[11px] font-medium text-zinc-600 dark:text-zinc-300 bg-black/[0.02] dark:bg-white/[0.02] border border-black/[0.04] dark:border-white/[0.04] text-center select-none">
+          <div className="flex-1 inline-flex items-center justify-center py-2.5 rounded-xl text-[11px] font-medium text-zinc-500 dark:text-zinc-400 bg-black/[0.02] dark:bg-white/[0.02] border border-black/[0.04] dark:border-white/[0.04] text-center select-none">
             Demo Unavailable
           </div>
         )}

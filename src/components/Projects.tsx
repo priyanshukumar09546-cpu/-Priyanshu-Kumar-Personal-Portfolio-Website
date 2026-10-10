@@ -27,15 +27,15 @@ export function Projects() {
           </div>
 
           <div className="mb-2">
-            <span className="font-handwriting text-amber-500 dark:text-amber-400 text-xl sm:text-2xl -rotate-2 inline-block">
-              crafted with intent &bull; built from scratch
+            <span className="font-handwriting text-amber-500 dark:text-amber-400 text-2xl sm:text-3xl -rotate-1 inline-block select-none">
+              ~ Ideas into reality.
             </span>
           </div>
 
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-zinc-900 dark:text-white mb-4">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.03em] text-zinc-900 dark:text-white mb-4">
             Production Software &amp; AI Systems
           </h2>
-          <p className="text-base text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto">
+          <p className="text-base sm:text-lg text-zinc-600 dark:text-zinc-400 max-w-2xl mx-auto leading-relaxed">
             Explore 6 end-to-end applications spanning AI/ML engineering, compiler tracing, multimodal fraud security, and production edtech marketplaces.
           </p>
 

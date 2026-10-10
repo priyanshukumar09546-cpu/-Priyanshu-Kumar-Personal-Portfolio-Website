@@ -33,8 +33,8 @@ export function Hero() {
             <span>{profileData.statusBadge}</span>
           </div>
 
-          <span className="font-handwriting text-amber-500 dark:text-amber-400 text-xl sm:text-2xl -rotate-2 select-none">
-            ~ Always building.
+          <span className="font-handwriting text-amber-500 dark:text-amber-400 text-2xl sm:text-3xl -rotate-1 select-none">
+            ~ Turning ideas into reality.
           </span>
         </motion.div>
 
@@ -70,42 +70,47 @@ export function Hero() {
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="flex items-center gap-2 mb-3"
+          className="flex items-center gap-2 mb-2"
         >
-          <span className="text-xs sm:text-sm font-mono font-semibold tracking-widest text-amber-600 dark:text-amber-400 uppercase">
+          <span className="text-xs sm:text-sm font-mono font-bold tracking-[0.2em] text-amber-600 dark:text-amber-400 uppercase">
             {profileData.eyebrow}
           </span>
         </motion.div>
 
-        {/* Name */}
+        {/* Name with character, refined weight, letter spacing & responsive sizing */}
         <motion.h1
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.25 }}
-          className="text-4xl sm:text-6xl md:text-7xl font-extrabold tracking-tight text-zinc-900 dark:text-white mb-4"
+          className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-[-0.03em] text-zinc-900 dark:text-white mb-3"
         >
           {profileData.name}
         </motion.h1>
 
-        {/* Headline */}
+        {/* Headline with editorial balance */}
         <motion.p
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.35 }}
-          className="text-lg sm:text-2xl md:text-3xl font-medium text-zinc-700 dark:text-zinc-200 mb-6 max-w-3xl"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 mb-4 max-w-3xl"
         >
           {profileData.headline}
         </motion.p>
 
-        {/* Supporting Copy */}
-        <motion.p
+        {/* Supporting Copy with subtle cursive signature */}
+        <motion.div
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.45 }}
-          className="text-sm sm:text-base md:text-lg text-zinc-600 dark:text-zinc-400 mb-9 max-w-2xl leading-relaxed"
+          className="mb-8 max-w-2xl"
         >
-          &ldquo;{profileData.supportingCopy}&rdquo;
-        </motion.p>
+          <p className="text-sm sm:text-base md:text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed mb-2">
+            &ldquo;{profileData.supportingCopy}&rdquo;
+          </p>
+          <p className="font-handwriting text-amber-500 dark:text-amber-400 text-xl sm:text-2xl select-none">
+            ~ Always building.
+          </p>
+        </motion.div>
 
         {/* CTAs */}
         <motion.div

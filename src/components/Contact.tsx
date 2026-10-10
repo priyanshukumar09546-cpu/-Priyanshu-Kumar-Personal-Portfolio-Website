@@ -31,7 +31,7 @@ export function Contact() {
           </span>
         </div>
 
-        <h2 className="text-3xl sm:text-5xl md:text-6xl font-extrabold tracking-tight text-zinc-900 dark:text-white mb-6">
+        <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-[-0.03em] text-zinc-900 dark:text-white mb-6">
           Let&apos;s build something useful.
         </h2>
 
