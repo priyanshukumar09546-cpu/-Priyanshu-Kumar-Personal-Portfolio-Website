@@ -103,16 +103,13 @@ export function Navbar() {
           {/* Right Controls: Resume & Theme Toggle */}
           <div className="hidden md:flex items-center gap-3">
             <ThemeToggle />
-            <a
-              href={profileData.resumeUrl}
-              download="Priyanshu_Kumar_Resume.pdf"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/resume"
               className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-medium text-amber-950 dark:text-amber-300 bg-amber-400/90 dark:bg-amber-500/20 hover:bg-amber-400 dark:hover:bg-amber-500/30 border border-amber-400/40 dark:border-amber-400/30 transition-all duration-200 shadow-sm hover:shadow-glow-subtle focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
             >
               <FileText className="w-3.5 h-3.5" />
               <span>Resume</span>
-            </a>
+            </Link>
           </div>
 
           {/* Mobile Menu Button */}
@@ -154,17 +151,14 @@ export function Navbar() {
               );
             })}
             <div className="pt-3 mt-2 border-t border-black/10 dark:border-white/10 flex flex-col gap-2">
-              <a
-                href={profileData.resumeUrl}
-                download="Priyanshu_Kumar_Resume.pdf"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/resume"
                 onClick={() => setMobileMenuOpen(false)}
                 className="flex items-center justify-center gap-2 w-full py-2.5 rounded-xl text-xs font-semibold text-amber-950 dark:text-amber-200 bg-amber-400 dark:bg-amber-500/25 border border-amber-400/40"
               >
                 <FileText className="w-4 h-4" />
-                <span>Download Resume</span>
-              </a>
+                <span>View &amp; Download Resume</span>
+              </Link>
             </div>
           </nav>
         </div>

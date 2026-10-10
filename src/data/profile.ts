@@ -55,19 +55,19 @@ export const profileData: ProfileData = {
   },
   stats: [
     {
-      value: "5+",
+      value: "6",
       label: "Engineered Platforms",
-      detail: "Full-stack apps, AI models & developer tools built and published on GitHub",
+      detail: "Full-stack apps, compiler AST engines, AI models & developer tools published on GitHub",
+    },
+    {
+      value: "3",
+      label: "Verified Live Deployments",
+      detail: "Production web applications active online (MentorNearby, CodeTrace, CampusPrep)",
     },
     {
       value: "19",
       label: "Public Repositories",
-      detail: "Verified source code spanning AI, ML, computer vision & web development",
-    },
-    {
-      value: "2",
-      label: "Industry Programs",
-      detail: "Codveda Technologies internship & IBM SkillsBuild AICTE program",
+      detail: "Verified source code spanning AI, ML, AST tracing, computer vision & full-stack development",
     },
   ],
 };

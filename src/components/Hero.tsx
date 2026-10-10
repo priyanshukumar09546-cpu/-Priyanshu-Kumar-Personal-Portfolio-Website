@@ -2,8 +2,9 @@
 
 import React, { useState } from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { motion } from "framer-motion";
-import { ArrowDown, Github, Linkedin, Mail, FileText, ArrowRight, Sparkles } from "lucide-react";
+import { ArrowDown, Github, Linkedin, Mail, FileText, ArrowRight, Sparkles, Terminal } from "lucide-react";
 import { profileData } from "@/data/profile";
 
 export function Hero() {
@@ -12,33 +13,40 @@ export function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-[92vh] flex items-center justify-center pt-28 pb-16 px-4 sm:px-6 lg:px-8 overflow-hidden"
+      className="relative min-h-[94vh] flex items-center justify-center pt-28 pb-20 px-4 sm:px-6 lg:px-8 overflow-hidden"
     >
-      {/* Background Atmosphere */}
-      <div className="absolute inset-0 bg-grid-pattern pointer-events-none opacity-40 dark:opacity-30" />
-      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[550px] h-[550px] bg-amber-500/10 dark:bg-amber-500/10 blur-[130px] rounded-full pointer-events-none -z-10" />
+      {/* Ambient Animated Atmosphere */}
+      <div className="absolute inset-0 bg-grid-pattern pointer-events-none opacity-40 dark:opacity-25" />
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[600px] bg-gradient-to-tr from-amber-500/15 via-amber-400/10 to-transparent blur-[140px] rounded-full pointer-events-none -z-10 animate-pulse" />
+      <div className="absolute -top-12 right-1/4 w-[350px] h-[350px] bg-sky-500/10 blur-[120px] rounded-full pointer-events-none -z-10" />
 
-      <div className="max-w-5xl mx-auto w-full text-center flex flex-col items-center">
-        {/* Availability Badge */}
+      <div className="max-w-5xl mx-auto w-full text-center flex flex-col items-center relative z-10">
+        {/* Availability Badge & Handwritten Accent */}
         <motion.div
           initial={{ opacity: 0, y: -10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5 }}
-          className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-amber-500/30 dark:border-amber-400/25 bg-amber-500/10 dark:bg-amber-400/10 text-amber-700 dark:text-amber-300 text-xs font-medium mb-6 backdrop-blur-md"
+          className="flex flex-col sm:flex-row items-center gap-2 sm:gap-3 mb-6"
         >
-          <span className="w-2 h-2 rounded-full bg-amber-500 animate-pulse" />
-          <span>{profileData.statusBadge}</span>
+          <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full border border-amber-500/30 dark:border-amber-400/25 bg-amber-500/10 dark:bg-amber-400/10 text-amber-700 dark:text-amber-300 text-xs font-semibold backdrop-blur-md">
+            <span className="w-2 h-2 rounded-full bg-amber-500 animate-ping" />
+            <span>{profileData.statusBadge}</span>
+          </div>
+
+          <span className="font-handwriting text-amber-500 dark:text-amber-400 text-xl sm:text-2xl -rotate-2 select-none">
+            ~ Always building.
+          </span>
         </motion.div>
 
-        {/* Profile Avatar / Monogram */}
+        {/* Profile Avatar / PK Monogram */}
         <motion.div
           initial={{ opacity: 0, scale: 0.9 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5, delay: 0.1 }}
           className="relative mb-6 group"
         >
-          <div className="absolute -inset-1.5 rounded-full bg-gradient-to-r from-amber-500 to-amber-300 opacity-30 blur-md group-hover:opacity-50 transition duration-500" />
-          <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full p-1 bg-surface-light dark:bg-surface-dark border border-amber-500/40 dark:border-amber-400/30 shadow-xl overflow-hidden">
+          <div className="absolute -inset-2 rounded-full bg-gradient-to-r from-amber-500 to-amber-300 opacity-25 blur-lg group-hover:opacity-45 transition duration-500" />
+          <div className="relative w-28 h-28 sm:w-32 sm:h-32 rounded-full p-1 bg-surface-light dark:bg-surface-dark border border-amber-500/40 dark:border-amber-400/30 shadow-2xl overflow-hidden">
             {!imageError ? (
               <Image
                 src={profileData.avatarUrl}
@@ -58,14 +66,16 @@ export function Hero() {
         </motion.div>
 
         {/* Eyebrow */}
-        <motion.p
+        <motion.div
           initial={{ opacity: 0, y: 10 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.5, delay: 0.2 }}
-          className="text-xs sm:text-sm font-semibold tracking-widest text-amber-600 dark:text-amber-400 uppercase mb-3"
+          className="flex items-center gap-2 mb-3"
         >
-          {profileData.eyebrow}
-        </motion.p>
+          <span className="text-xs sm:text-sm font-mono font-semibold tracking-widest text-amber-600 dark:text-amber-400 uppercase">
+            {profileData.eyebrow}
+          </span>
+        </motion.div>
 
         {/* Name */}
         <motion.h1
@@ -108,20 +118,17 @@ export function Hero() {
             href="#projects"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-zinc-950 bg-amber-400 hover:bg-amber-300 dark:bg-amber-400 dark:hover:bg-amber-300 transition-all duration-200 shadow-md hover:shadow-glow-amber focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
           >
-            <span>Explore My Work</span>
+            <span>Explore 6 Projects</span>
             <ArrowRight className="w-4 h-4" />
           </a>
 
-          <a
-            href={profileData.resumeUrl}
-            download="Priyanshu_Kumar_Resume.pdf"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link
+            href="/resume"
             className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-sm font-semibold text-zinc-800 dark:text-zinc-200 bg-white/70 dark:bg-surface-dark/80 hover:bg-white dark:hover:bg-surface-dark-subtle border border-black/10 dark:border-white/10 hover:border-amber-500/40 transition-all duration-200 shadow-sm focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
           >
             <FileText className="w-4 h-4 text-amber-500" />
-            <span>Download Resume</span>
-          </a>
+            <span>View &amp; Download Resume</span>
+          </Link>
         </motion.div>
 
         {/* Social Links */}
@@ -165,9 +172,9 @@ export function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.6, delay: 0.75 }}
           aria-label="Scroll to About section"
-          className="inline-flex flex-col items-center gap-1.5 text-zinc-400 hover:text-amber-500 dark:hover:text-amber-400 transition-colors"
+          className="inline-flex flex-col items-center gap-1 text-zinc-400 hover:text-amber-500 dark:hover:text-amber-400 transition-colors"
         >
-          <span className="text-[11px] font-medium tracking-wider uppercase">Scroll</span>
+          <span className="text-[11px] font-mono tracking-widest uppercase">Explore Below</span>
           <ArrowDown className="w-3.5 h-3.5 animate-bounce" />
         </motion.a>
       </div>

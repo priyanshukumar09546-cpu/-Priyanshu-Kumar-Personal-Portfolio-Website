@@ -1,11 +1,17 @@
 import type { Metadata, Viewport } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Caveat } from "next/font/google";
 import "./globals.css";
 import { ThemeProvider } from "@/components/ThemeProvider";
 
 const inter = Inter({
   subsets: ["latin"],
   variable: "--font-inter",
+  display: "swap",
+});
+
+const caveat = Caveat({
+  subsets: ["latin"],
+  variable: "--font-handwriting",
   display: "swap",
 });
 
@@ -101,7 +107,7 @@ export default function RootLayout({
           }}
         />
       </head>
-      <body className={`${inter.variable} font-sans min-h-screen selection:bg-amber-500/30 selection:text-amber-300`}>
+      <body className={`${inter.variable} ${caveat.variable} font-sans min-h-screen selection:bg-amber-500/30 selection:text-amber-300`}>
         <ThemeProvider>{children}</ThemeProvider>
       </body>
     </html>

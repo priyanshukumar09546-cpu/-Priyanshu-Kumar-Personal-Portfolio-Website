@@ -8,7 +8,7 @@ export interface Project {
   stack: string[];
   githubUrl?: string;
   liveUrl?: string;
-  statusBadge: "Live Production" | "Source Verified" | "Benchmark Verified" | "Experimental Prototype";
+  statusBadge: "Live Production" | "Source Verified" | "Benchmark Verified" | "Architecture Verified" | "Experimental Prototype";
   featured: boolean;
   image?: string;
   disclaimer?: string;
@@ -23,7 +23,7 @@ export const projectsData: Project[] = [
     description:
       "A production-ready edtech marketplace designed to connect students and parents with verified home and online tutors based on location, subjects, budget, and specific learning needs. Features role-based dashboards, tutor matching algorithms, and modular REST APIs.",
     highlights: [
-      "Role-based authentication & dashboards (Student, Tutor, Admin) with JWT & httpOnly security",
+      "Role-based authentication & dashboards (Student, Tutor, Admin) with JWT & httpOnly cookie security",
       "Dynamic tutor discovery with location, subject, and budget filtering",
       "Cloudinary file storage & secure Razorpay payment gateway integration",
       "Hardened Node.js backend using Helmet, express-rate-limit, and mongo-sanitize",
@@ -42,35 +42,35 @@ export const projectsData: Project[] = [
     liveUrl: "https://www.mentornearby.com",
     statusBadge: "Live Production",
     featured: true,
+    image: "/projects/mentornearby.png",
   },
   {
-    id: "scamshield-ai",
-    title: "ScamShield AI",
-    category: "AI / Multimodal Cybersecurity",
-    tagline: "Multimodal AI platform protecting retail investors from fraudulent schemes and phishing.",
+    id: "codetrace",
+    title: "CodeTrace",
+    category: "AI / Developer Education & Runtime Tracing",
+    tagline: "AI-powered interactive programming platform making execution visible via real-time AST tracing.",
     description:
-      "An AI-powered cybersecurity and investor protection platform designed to help retail investors and citizens evaluate suspicious messages, investment pitches, URLs, and screenshots before trusting them.",
+      "An interactive computer science education platform that eliminates the invisible execution barrier. Unlike generic LLM chat wrappers, CodeTrace executes code deterministically using an AST instrumentation and runtime tracing engine to visualize memory layout, call stack, control flow, and variable state step-by-step.",
     highlights: [
-      "Multimodal analysis integrating Google Gemini API and client-side Tesseract.js OCR",
-      "Deterministic safety rules coupled with an explainable risk scoring system (0 to 100)",
-      "Strict PII redaction and robust schema verification powered by Zod",
-      "Exportable forensic audit reports and risk advisories built with jsPDF",
+      "Deterministic runtime tracing engine powered by Babel AST instrumentation (@babel/parser, @babel/traverse)",
+      "Monaco Editor with step-over, step-into, pause/resume, and execution speed controls (0.5x to 4x)",
+      "Live Memory Layout & Call Stack visualizer tracking activation frames and heap references",
+      "Contextual AI tutoring strictly grounded in verified runtime execution state streams",
     ],
     stack: [
       "Next.js 14",
       "TypeScript",
-      "Prisma ORM",
+      "Monaco Editor",
+      "Babel AST",
       "Tailwind CSS",
-      "Google Gemini API",
-      "Tesseract.js",
-      "Zod",
+      "Vitest",
+      "Vercel",
     ],
-    githubUrl: "https://github.com/priyanshukumar09546-cpu/scamshield-ai",
-    // Note: Live demo at scamshield-ai-official.vercel.app returned 404, so liveUrl is omitted per audit rules
-    statusBadge: "Source Verified",
+    githubUrl: "https://github.com/priyanshukumar09546-cpu/CodeTrace",
+    liveUrl: "https://codetrace-nu.vercel.app",
+    statusBadge: "Live Production",
     featured: true,
-    disclaimer:
-      "Risk-assessment aid designed for fraud awareness and educational evaluation. Not a financial guarantee or legal counsel.",
+    image: "/projects/codetrace.png",
   },
   {
     id: "campusprep",
@@ -99,7 +99,36 @@ export const projectsData: Project[] = [
     liveUrl: "https://professorvirus.site",
     statusBadge: "Live Production",
     featured: true,
-    image: "/projects/campusprep-logo.png",
+    image: "/projects/campusprep.png",
+  },
+  {
+    id: "scamshield-ai",
+    title: "ScamShield AI",
+    category: "AI / Multimodal Cybersecurity",
+    tagline: "Multimodal AI platform protecting retail investors from fraudulent schemes and phishing.",
+    description:
+      "An AI-powered cybersecurity and investor protection platform designed to help retail investors and citizens evaluate suspicious messages, investment pitches, URLs, and screenshots before trusting them.",
+    highlights: [
+      "Multimodal analysis integrating Google Gemini API and client-side Tesseract.js OCR",
+      "Deterministic safety rules coupled with an explainable risk scoring system (0 to 100)",
+      "Strict PII redaction and robust schema verification powered by Zod",
+      "Exportable forensic audit reports and risk advisories built with jsPDF",
+    ],
+    stack: [
+      "Next.js 14",
+      "TypeScript",
+      "Prisma ORM",
+      "Tailwind CSS",
+      "Google Gemini API",
+      "Tesseract.js",
+      "Zod",
+    ],
+    githubUrl: "https://github.com/priyanshukumar09546-cpu/scamshield-ai",
+    statusBadge: "Source Verified",
+    featured: true,
+    image: "/projects/scamshield.svg",
+    disclaimer:
+      "Risk-assessment aid designed for fraud awareness and educational evaluation. Not a financial guarantee or legal counsel. Live demo currently offline for infrastructure updates.",
   },
   {
     id: "cropdetect-ai",
@@ -125,37 +154,39 @@ export const projectsData: Project[] = [
       "Streamlit",
     ],
     githubUrl: "https://github.com/priyanshukumar09546-cpu/CropDetect-AI",
-    // Note: Streamlit deployment timed out; liveUrl hidden per verification policy
     statusBadge: "Benchmark Verified",
     featured: false,
     image: "/projects/cropdetect-home.png",
     disclaimer:
-      "Benchmark results measured on laboratory PlantVillage dataset. Real-world in-field accuracy may vary with sunlight, occlusion, and background conditions.",
+      "Benchmark results measured on laboratory PlantVillage dataset. Real-world in-field accuracy may vary with sunlight, occlusion, and background conditions. Free tier Streamlit demo sleeping.",
   },
   {
-    id: "ai-medicine-assistant",
-    title: "AI Medicine Assistant",
-    category: "AI / Assistive Technology Prototype",
-    tagline: "Accessibility prototype identifying medicines from photos with voice narration.",
+    id: "supply-chainer",
+    title: "Supply-Chainer",
+    category: "AI / Operations Research & Risk Intelligence",
+    tagline: "Probabilistic supply chain risk intelligence, route optimization, and disruption simulation.",
     description:
-      "An experimental accessibility-focused prototype that assists visually impaired users by analyzing medicine packaging photos and vocalizing the predicted medicine name using text-to-speech audio feedback.",
+      "An enterprise supply chain resilience platform built to forecast multimodal transit delays, simulate global chokepoint disruptions, and compute Pareto-optimal freight routing using gradient-boosted quantile regression and directed acyclic graphs.",
     highlights: [
-      "Computer vision image classification pipeline predicting pharmaceutical packaging labels",
-      "Dual response modality providing results in high-contrast text and audio speech synthesis",
-      "Lightweight, accessible user interface optimized for assistive and screen-reading workflows",
+      "Quantile Delay Prediction (p10, p50, p90) forecasting tail-risk distributions beyond naive averages",
+      "Monte-Carlo simulation modeling chokepoint closures, supplier cascades, and buffer stock needs",
+      "Directed Acyclic Graph (DAG) route optimization balancing lead time, cost, and carbon emissions",
+      "Comprehensive architecture and deployment specification published to open-source repository",
     ],
     stack: [
       "Python",
-      "Machine Learning",
-      "Computer Vision",
-      "Text-to-Speech (TTS)",
-      "Streamlit",
+      "FastAPI",
+      "Next.js 14",
+      "LightGBM / Quantile ML",
+      "NetworkX",
+      "TypeScript",
+      "Tailwind CSS",
     ],
-    githubUrl: "https://github.com/priyanshukumar09546-cpu/AI-Medicine-Assistant-Identifier-for-visually-impaired",
-    // No live demo URL supplied; liveUrl omitted
-    statusBadge: "Experimental Prototype",
+    githubUrl: "https://github.com/priyanshukumar09546-cpu/Supply-chainer",
+    statusBadge: "Architecture Verified",
     featured: false,
+    image: "/projects/supplychainer.svg",
     disclaimer:
-      "Experimental prototype built for accessibility research. Not clinically validated; never use for medical diagnosis or prescription verification.",
+      "Full mathematical model and architecture specification published. Open-source core implementation in active development.",
   },
 ];

@@ -52,7 +52,7 @@ export function AuditModal({ isOpen, onClose }: { isOpen: boolean; onClose: () =
                 </span>
                 <span
                   className={`px-2 py-0.5 rounded text-[10px] font-mono font-bold ${
-                    item.status === "VERIFIED"
+                    item.status === "VERIFIED" || item.status === "DEPLOYED_VERIFIED"
                       ? "bg-emerald-500/10 text-emerald-600 dark:text-emerald-400"
                       : item.status === "HIDDEN_OFFLINE"
                       ? "bg-amber-500/10 text-amber-600 dark:text-amber-400"

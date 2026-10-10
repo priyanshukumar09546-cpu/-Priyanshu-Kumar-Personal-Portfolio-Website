@@ -36,6 +36,7 @@ const config: Config = {
       },
       fontFamily: {
         sans: ["var(--font-inter)", "system-ui", "sans-serif"],
+        handwriting: ["var(--font-handwriting)", "cursive"],
       },
       boxShadow: {
         "glow-amber": "0 0 35px -5px rgba(245, 158, 11, 0.25)",
