@@ -16,11 +16,11 @@ export function About() {
             <span>About Priyanshu</span>
           </div>
           <div className="mb-2">
-            <span className="font-handwriting text-amber-500 dark:text-amber-400 text-xl sm:text-2xl -rotate-1 inline-block">
-              ~ engineering with real user focus
+            <span className="font-handwriting text-amber-500 dark:text-amber-400 text-2xl sm:text-3xl font-semibold -rotate-1 inline-block select-none">
+              ~ Engineering with real user focus.
             </span>
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black tracking-[-0.03em] text-zinc-900 dark:text-white mb-4">
+          <h2 className="section-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-zinc-950 dark:text-white mb-4">
             {profileData.aboutHeading}
           </h2>
         </div>

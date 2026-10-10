@@ -26,12 +26,12 @@ export function Contact() {
         </div>
 
         <div className="mb-2">
-          <span className="font-handwriting text-amber-500 dark:text-amber-400 text-xl sm:text-2xl -rotate-2 inline-block">
-            ~ open to internships &amp; high-impact collaborations
+          <span className="font-handwriting text-amber-500 dark:text-amber-400 text-2xl sm:text-3xl font-semibold -rotate-2 inline-block select-none">
+            ~ Open to internships &amp; high-impact collaborations.
           </span>
         </div>
 
-        <h2 className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black tracking-[-0.03em] text-zinc-900 dark:text-white mb-6">
+        <h2 className="section-title text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black text-zinc-950 dark:text-white mb-6">
           Let&apos;s build something useful.
         </h2>
 

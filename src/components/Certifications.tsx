@@ -16,7 +16,12 @@ export function Certifications() {
             <Sparkles className="w-3.5 h-3.5" />
             <span>Programs &amp; Leadership</span>
           </div>
-          <h2 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-zinc-900 dark:text-white mb-4">
+          <div className="mb-2">
+            <span className="font-handwriting text-amber-500 dark:text-amber-400 text-2xl sm:text-3xl font-semibold -rotate-1 inline-block select-none">
+              ~ Continuous learning.
+            </span>
+          </div>
+          <h2 className="section-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-zinc-950 dark:text-white mb-4">
             Certifications &amp; Activities
           </h2>
           <p className="text-base text-zinc-600 dark:text-zinc-400">

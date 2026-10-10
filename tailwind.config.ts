@@ -35,8 +35,9 @@ const config: Config = {
         },
       },
       fontFamily: {
-        sans: ["var(--font-inter)", "system-ui", "sans-serif"],
-        handwriting: ["var(--font-handwriting)", "cursive"],
+        sans: ["var(--font-inter)", "-apple-system", "BlinkMacSystemFont", "Segoe UI", "Roboto", "sans-serif"],
+        handwriting: ["var(--font-handwriting)", "Caveat", "cursive"],
+        mono: ["ui-monospace", "SFMono-Regular", "Menlo", "Monaco", "Consolas", "monospace"],
       },
       boxShadow: {
         "glow-amber": "0 0 35px -5px rgba(245, 158, 11, 0.25)",

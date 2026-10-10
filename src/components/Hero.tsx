@@ -33,8 +33,8 @@ export function Hero() {
             <span>{profileData.statusBadge}</span>
           </div>
 
-          <span className="font-handwriting text-amber-500 dark:text-amber-400 text-2xl sm:text-3xl -rotate-1 select-none">
-            ~ Turning ideas into reality.
+          <span className="font-handwriting text-amber-500 dark:text-amber-400 text-2xl sm:text-3xl font-semibold -rotate-1 select-none">
+            ~ Ideas into reality.
           </span>
         </motion.div>
 
@@ -72,7 +72,7 @@ export function Hero() {
           transition={{ duration: 0.5, delay: 0.2 }}
           className="flex items-center gap-2 mb-2"
         >
-          <span className="text-xs sm:text-sm font-mono font-bold tracking-[0.2em] text-amber-600 dark:text-amber-400 uppercase">
+          <span className="text-xs sm:text-sm font-mono font-bold tracking-[0.22em] text-amber-600 dark:text-amber-400 uppercase">
             {profileData.eyebrow}
           </span>
         </motion.div>
@@ -82,7 +82,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.25 }}
-          className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-black tracking-[-0.03em] text-zinc-900 dark:text-white mb-3"
+          className="hero-title text-5xl sm:text-7xl md:text-8xl lg:text-9xl font-black tracking-[-0.045em] sm:tracking-[-0.05em] text-zinc-950 dark:text-white mb-4 select-none drop-shadow-sm"
         >
           {profileData.name}
         </motion.h1>
@@ -92,7 +92,7 @@ export function Hero() {
           initial={{ opacity: 0, y: 15 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.35 }}
-          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-semibold tracking-tight text-zinc-800 dark:text-zinc-100 mb-4 max-w-3xl"
+          className="text-xl sm:text-2xl md:text-3xl lg:text-4xl font-extrabold tracking-[-0.025em] text-zinc-800 dark:text-zinc-100 mb-5 max-w-3xl leading-[1.2]"
         >
           {profileData.headline}
         </motion.p>
@@ -104,10 +104,10 @@ export function Hero() {
           transition={{ duration: 0.6, delay: 0.45 }}
           className="mb-8 max-w-2xl"
         >
-          <p className="text-sm sm:text-base md:text-lg text-zinc-600 dark:text-zinc-400 leading-relaxed mb-2">
+          <p className="text-base sm:text-lg md:text-xl text-zinc-600 dark:text-zinc-300 leading-relaxed font-normal mb-3">
             &ldquo;{profileData.supportingCopy}&rdquo;
           </p>
-          <p className="font-handwriting text-amber-500 dark:text-amber-400 text-xl sm:text-2xl select-none">
+          <p className="font-handwriting text-amber-500 dark:text-amber-400 text-2xl sm:text-3xl font-bold select-none">
             ~ Always building.
           </p>
         </motion.div>

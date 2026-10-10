@@ -26,7 +26,7 @@ export function ProjectCard({ project, priority = false }: { project: Project; p
   };
 
   return (
-    <article className="group relative rounded-2xl border border-black/[0.08] dark:border-white/[0.08] bg-white/70 dark:bg-surface-dark/70 backdrop-blur-md overflow-hidden flex flex-col justify-between h-full transition-all duration-300 hover:border-amber-500/40 hover:shadow-glow-subtle shadow-sm">
+    <article className="group relative rounded-2xl border border-black/[0.08] dark:border-white/[0.08] bg-white/70 dark:bg-surface-dark/70 backdrop-blur-md overflow-hidden flex flex-col justify-between h-full transition-all duration-300 hover:border-amber-500/40 hover:-translate-y-1 hover:shadow-glow-subtle shadow-sm">
       <div>
         {/* Visual Preview Header */}
         <div className="relative w-full h-52 sm:h-56 bg-gradient-to-br from-zinc-100 to-zinc-200 dark:from-[#0d1017] dark:to-[#171b26] border-b border-black/[0.06] dark:border-white/[0.06] overflow-hidden flex items-center justify-center">
@@ -99,13 +99,13 @@ export function ProjectCard({ project, priority = false }: { project: Project; p
         {/* Content Body */}
         <div className="p-6">
           <div className="mb-3">
-            <span className="text-[11px] font-mono font-bold tracking-widest text-amber-600 dark:text-amber-400 uppercase mb-1.5 block">
+            <span className="text-[11px] font-mono font-bold tracking-[0.16em] text-amber-600 dark:text-amber-400 uppercase mb-1.5 block">
               {project.category}
             </span>
-            <h3 className="text-xl sm:text-2xl font-black text-zinc-900 dark:text-white tracking-tight group-hover:text-amber-500 dark:group-hover:text-amber-400 transition-colors">
+            <h3 className="project-title text-xl sm:text-2xl font-black text-zinc-950 dark:text-white group-hover:text-amber-500 dark:group-hover:text-amber-400 transition-colors">
               {project.title}
             </h3>
-            <p className="text-xs font-medium text-zinc-600 dark:text-zinc-400 mt-1 leading-snug">
+            <p className="text-xs sm:text-[13px] font-semibold text-zinc-700 dark:text-zinc-300 mt-1 leading-snug">
               {project.tagline}
             </p>
           </div>
@@ -154,7 +154,7 @@ export function ProjectCard({ project, priority = false }: { project: Project; p
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`View ${project.title} source code on GitHub`}
-            className="flex-1 inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-semibold text-zinc-800 dark:text-zinc-200 bg-black/[0.04] dark:bg-white/[0.05] hover:bg-black/[0.08] dark:hover:bg-white/[0.1] border border-black/10 dark:border-white/10 transition-colors focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+            className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-semibold text-zinc-800 dark:text-zinc-200 bg-black/[0.04] dark:bg-white/[0.05] hover:bg-black/[0.08] dark:hover:bg-white/[0.1] border border-black/10 dark:border-white/10 transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
           >
             <Github className="w-3.5 h-3.5" />
             <span>GitHub</span>
@@ -167,7 +167,7 @@ export function ProjectCard({ project, priority = false }: { project: Project; p
             target="_blank"
             rel="noopener noreferrer"
             aria-label={`Open ${project.title} live deployment`}
-            className="flex-1 inline-flex items-center justify-center gap-1.5 px-4 py-2.5 rounded-xl text-xs font-bold text-zinc-950 bg-amber-400 hover:bg-amber-300 dark:bg-amber-400 dark:hover:bg-amber-300 shadow-sm hover:shadow-glow-subtle transition-all duration-200 focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 group/btn"
+            className="flex-1 inline-flex items-center justify-center gap-2 px-4 py-2.5 rounded-xl text-xs font-bold text-zinc-950 bg-amber-400 hover:bg-amber-300 dark:bg-amber-400 dark:hover:bg-amber-300 shadow-sm hover:shadow-glow-subtle transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500 group/btn"
           >
             <span>Live Demo</span>
             <span className="text-sm font-bold leading-none transition-transform duration-200 group-hover/btn:translate-x-0.5 group-hover/btn:-translate-y-0.5">↗</span>

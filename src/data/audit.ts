@@ -46,7 +46,7 @@ export const auditReportData: AuditItem[] = [
     category: "Deployments",
     item: "ScamShield AI Live Platform",
     status: "DEPLOYED_VERIFIED",
-    details: "Built full-stack Next.js app and deployed to Vercel at https://scamshield-ai-steel-gamma.vercel.app (HTTP 200 OK). Source verified at github.com/priyanshukumar09546-cpu/scamshield-ai.",
+    details: "Built full-stack Next.js app and deployed to Vercel at https://scamshield-ai-official.vercel.app (HTTP 200 OK). Source verified at github.com/priyanshukumar09546-cpu/scamshield-ai.",
   },
   {
     category: "Deployments",

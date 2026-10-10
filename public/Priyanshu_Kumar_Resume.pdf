@@ -9,97 +9,99 @@ endobj
 << /Type /Page /Parent 2 0 R /MediaBox [0 0 595 842] /Contents 4 0 R /Resources << /Font << /F1 5 0 R /F2 6 0 R >> >> >>
 endobj
 4 0 obj
-<< /Length 2931 >>
+<< /Length 3154 >>
 stream
 BT
-/F1 20 Tf
-50 780 Td
+/F1 18 Tf
+50 792 Td
 (PRIYANSHU KUMAR) Tj
-0 -18 Td
-/F2 10 Tf
+0 -16 Td
+/F2 9.5 Tf
 (AI/ML Engineer & Full-Stack Developer | Ghaziabad, UP, India) Tj
-0 -14 Td
+0 -13 Td
 (Email: priyanshukumar09546@gmail.com | GitHub: github.com/priyanshukumar09546-cpu | LinkedIn: linkedin.com/in/priyanshu-kumar-9a2732255) Tj
-0 -24 Td
-/F1 12 Tf
+0 -20 Td
+/F1 11 Tf
 (EDUCATION) Tj
-0 -14 Td
-/F2 9.5 Tf
+0 -13 Td
+/F2 9 Tf
 (B.Tech in Computer Science and Engineering - ABES Engineering College, Ghaziabad (AKTU, 2024 - 2028)) Tj
-0 -12 Td
-(Class XII: Tagore Shiksha Sadan Inter College, Hapur (2022 - 80%)) Tj
-0 -12 Td
-(Class X: Tagore Shiksha Sadan Inter College, Hapur (2020 - 75%)) Tj
-0 -22 Td
-/F1 12 Tf
+0 -11 Td
+(Class XII: Tagore Shiksha Sadan Inter College, Hapur (2022 - 80%) | Class X: TSSIC (2020 - 75%)) Tj
+0 -18 Td
+/F1 11 Tf
 (TECHNICAL SKILLS) Tj
-0 -14 Td
-/F2 9.5 Tf
-(Languages: Python, TypeScript, JavaScript, C, C++, Java) Tj
-0 -12 Td
-(Frontend: React, Next.js 14, Tailwind CSS, HTML5, CSS3) Tj
-0 -12 Td
-(Backend & Databases: Node.js, Express.js, FastAPI, REST APIs, MongoDB, MySQL, Prisma) Tj
-0 -12 Td
-(AI / ML & CV: TensorFlow/Keras, OpenCV, CNNs, MobileNetV2, Google Gemini API, Tesseract OCR) Tj
-0 -12 Td
-(Tools & Cloud: Git, GitHub, Vercel, Render, VS Code) Tj
-0 -22 Td
-/F1 12 Tf
-(FEATURED PROJECTS) Tj
-0 -14 Td
-/F1 10 Tf
-(MentorNearby - Full-Stack Educational Marketplace) Tj
-0 -12 Td
+0 -13 Td
 /F2 9 Tf
-(- Connecting students and verified local/online tutors based on budget, subjects, and location.) Tj
+(Languages: Python, TypeScript, JavaScript, C, C++, Java, SQL) Tj
 0 -11 Td
-(- Tech Stack: React, Vite, Node.js, Express, MongoDB Atlas, JWT, Razorpay, Cloudinary.) Tj
-0 -16 Td
-/F1 10 Tf
-(ScamShield AI - AI Financial Scam Analysis Platform) Tj
-0 -12 Td
-/F2 9 Tf
-(- Multimodal fraud analysis evaluating suspicious messages, OCR screenshots, and links using Gemini & Tesseract.js.) Tj
+(Frontend: React 18/19, Next.js 14, Vite, Tailwind CSS, Monaco Editor, Leaflet) Tj
 0 -11 Td
-(- Tech Stack: Next.js 14, TypeScript, Prisma, Tailwind CSS, Google Gemini API, Zod.) Tj
-0 -16 Td
-/F1 10 Tf
-(CampusPrep / ProfessorVirus - Academic & Placement Prep Platform) Tj
-0 -12 Td
-/F2 9 Tf
-(- Comprehensive academic portal for AKTU students featuring notes, PYQs, Ask Virus AI study bot, and Interview Pro.) Tj
+(Backend & Databases: Node.js, Express.js, FastAPI, REST APIs, MongoDB, Prisma ORM) Tj
 0 -11 Td
-(- Tech Stack: React, Vite, Node.js, Express, MongoDB, OpenAI API, Gemini API, Tesseract.) Tj
-0 -16 Td
-/F1 10 Tf
-(CropDetect AI - Plant Disease Classification CNN) Tj
-0 -12 Td
-/F2 9 Tf
-(- MobileNetV2 CNN trained on PlantVillage 54,000+ images with 95.5% benchmark accuracy.) Tj
+(AI / ML & Systems: TensorFlow/Keras, OpenCV, CNNs, MobileNetV2, Google Gemini API, Babel AST) Tj
 0 -11 Td
-(- Tech Stack: Python, TensorFlow/Keras, OpenCV, FastAPI, React, Streamlit.) Tj
-0 -22 Td
-/F1 12 Tf
+(Tools & Cloud: Git, GitHub, Vercel, Render, VS Code, Vitest) Tj
+0 -18 Td
+/F1 11 Tf
+(FEATURED PROJECTS (6 VERIFIED SYSTEMS)) Tj
+0 -13 Td
+/F1 9.5 Tf
+(1. MentorNearby - EdTech Marketplace (Live: mentornearby.com)) Tj
+0 -11 Td
+/F2 8.5 Tf
+(- Connecting students & verified tutors with location matching, JWT auth, Razorpay & Cloudinary.) Tj
+0 -13 Td
+/F1 9.5 Tf
+(2. CodeTrace - AI Developer Education & AST Tracing (Live: codetrace-nu.vercel.app)) Tj
+0 -11 Td
+/F2 8.5 Tf
+(- Deterministic execution visualizer using Babel AST instrumentation & live memory layout in Monaco.) Tj
+0 -13 Td
+/F1 9.5 Tf
+(3. CampusPrep (ProfessorVirus) - Academic & Placement Suite (Live: professorvirus.site)) Tj
+0 -11 Td
+/F2 8.5 Tf
+(- AKTU university study companion featuring notes, PYQs, AI bot Ask Virus, and Interview Pro.) Tj
+0 -13 Td
+/F1 9.5 Tf
+(4. ScamShield AI - Multimodal Fraud Analysis (Live: scamshield-ai-steel-gamma.vercel.app)) Tj
+0 -11 Td
+/F2 8.5 Tf
+(- Multimodal fraud risk detection for pitches & screenshots using Gemini API, OCR & deterministic rules.) Tj
+0 -13 Td
+/F1 9.5 Tf
+(5. CropDetect AI - Plant Leaf CNN Classifier (Live: cropdetect-ai.vercel.app)) Tj
+0 -11 Td
+/F2 8.5 Tf
+(- Deep CNN (MobileNetV2) trained on 54k+ PlantVillage images achieving 95.5% benchmark accuracy.) Tj
+0 -13 Td
+/F1 9.5 Tf
+(6. Supply-Chainer - Operations Research & Risk Engine (Live: supply-chainer-snowy.vercel.app)) Tj
+0 -11 Td
+/F2 8.5 Tf
+(- Quantile delay forecasting (p10/p50/p90), Monte-Carlo bottleneck simulation & DAG route optimization.) Tj
+0 -18 Td
+/F1 11 Tf
 (EXPERIENCE & INTERNSHIPS) Tj
-0 -14 Td
-/F1 10 Tf
-(MentorNearby | Founder & Lead Developer) Tj
-0 -12 Td
-/F2 9 Tf
-(- Architected edtech platform with role-based auth, matching algorithms, and REST APIs.) Tj
-0 -14 Td
-/F1 10 Tf
+0 -13 Td
+/F1 9.5 Tf
+(MentorNearby | Founder & Lead Developer (2024 - Present)) Tj
+0 -11 Td
+/F2 8.5 Tf
+(- Architected full marketplace platform with role-based auth, dynamic search, and payment flows.) Tj
+0 -13 Td
+/F1 9.5 Tf
 (Codveda Technologies | Web Development Intern) Tj
-0 -12 Td
-/F2 9 Tf
-(- Developed responsive web interfaces and reusable components with modern web standards.) Tj
-0 -14 Td
-/F1 10 Tf
-(IBM SkillsBuild x AICTE (BharatCares) | Gen AI & Cloud Computing Intern) Tj
-0 -12 Td
-/F2 9 Tf
-(- Hands-on 6-week intensive on generative AI, prompt engineering, and cloud infrastructure.) Tj
+0 -11 Td
+/F2 8.5 Tf
+(- Developed responsive web interfaces and modular components adhering to production standards.) Tj
+0 -13 Td
+/F1 9.5 Tf
+(IBM SkillsBuild x AICTE (BharatCares) | Gen AI & Cloud Intern) Tj
+0 -11 Td
+/F2 8.5 Tf
+(- Hands-on 6-week intensive training on generative AI, prompt engineering, and cloud deployment.) Tj
 ET
 endstream
 endobj
@@ -116,10 +118,10 @@ xref
 0000000058 00000 n 
 0000000115 00000 n 
 0000000251 00000 n 
-0000003234 00000 n 
-0000003309 00000 n 
+0000003457 00000 n 
+0000003532 00000 n 
 trailer
 << /Size 7 /Root 1 0 R >>
 startxref
-3379
+3602
 %%EOF

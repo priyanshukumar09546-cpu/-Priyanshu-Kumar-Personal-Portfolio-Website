@@ -125,7 +125,7 @@ export const projectsData: Project[] = [
       "Vercel",
     ],
     githubUrl: "https://github.com/priyanshukumar09546-cpu/scamshield-ai",
-    liveUrl: "https://scamshield-ai-steel-gamma.vercel.app",
+    liveUrl: "https://scamshield-ai-official.vercel.app",
     statusBadge: "Live Production",
     featured: true,
     image: "/projects/scamshield.svg",
