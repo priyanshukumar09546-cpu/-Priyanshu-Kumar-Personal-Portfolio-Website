@@ -37,9 +37,9 @@ export const profileData: ProfileData = {
     "I build AI-powered products that solve real problems, from idea to deployment.",
   aboutHeading: "Curious by nature. Builder by choice.",
   aboutNarrative:
-    "I'm a B.Tech Computer Science Engineering student at ABES Engineering College, Ghaziabad, and the founder of MentorNearby. I combine AI with full-stack development to turn ideas into working applications. I enjoy building end-to-end products that are useful, accessible, and designed around real user needs. I'm continuously strengthening my foundations in data structures, algorithms, software engineering, and AI.",
+    "I turn ideas into functional software products by combining AI, full-stack engineering, and thoughtful product design. From developing intelligent applications and backend APIs to building responsive interfaces and deploying complete solutions, I enjoy working across the entire development lifecycle.",
   statusBadge: "Open to Internships & Collaborations",
-  avatarUrl: "/profile.jpg",
+  avatarUrl: "/images/priyanshu.png",
   resumeUrl: "/Priyanshu_Kumar_Resume.pdf",
   academic: {
     degree: "B.Tech in Computer Science and Engineering",
@@ -55,19 +55,22 @@ export const profileData: ProfileData = {
   },
   stats: [
     {
-      value: "6",
-      label: "Engineered Platforms",
-      detail: "Full-stack apps, compiler AST engines, AI models & developer tools published on GitHub",
+      value: "6+",
+      label: "Projects Built",
+      detail:
+        "AI-powered applications, developer tools, computer vision, and full-stack platforms.",
     },
     {
-      value: "6",
-      label: "Verified Live Deployments",
-      detail: "Production web applications active online (MentorNearby, CodeTrace, CampusPrep, ScamShield AI, CropDetect AI, Supply-Chainer)",
+      value: "6+",
+      label: "Live Deployments",
+      detail:
+        "Explore deployed applications and real product experiences through the portfolio's verified live links.",
     },
     {
-      value: "19",
+      value: "19+",
       label: "Public Repositories",
-      detail: "Verified source code spanning AI, ML, AST tracing, computer vision & full-stack development",
+      detail:
+        "Source code and engineering experiments across AI/ML, full-stack development, computer vision, and developer tools.",
     },
   ],
 };

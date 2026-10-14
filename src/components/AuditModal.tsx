@@ -13,7 +13,7 @@ export function AuditModal({ isOpen, onClose }: { isOpen: boolean; onClose: () =
         role="dialog"
         aria-modal="true"
         aria-labelledby="audit-title"
-        className="relative w-full max-w-2xl max-h-[85vh] overflow-y-auto rounded-2xl bg-white dark:bg-[#11141e] border border-black/10 dark:border-white/10 p-6 sm:p-8 shadow-2xl"
+        className="relative w-full max-w-2xl max-h-[85vh] overflow-y-auto rounded-2xl bg-white dark:bg-[#0a0f1d] border border-black/10 dark:border-amber-400/25 p-6 sm:p-8 shadow-[0_25px_60px_-15px_rgba(0,0,0,0.8),0_0_35px_rgba(255,194,41,0.2)]"
       >
         <div className="flex items-start justify-between mb-6">
           <div className="flex items-center gap-2.5">

@@ -17,7 +17,11 @@ export function Projects() {
   });
 
   return (
-    <section id="projects" className="py-28 px-4 sm:px-6 lg:px-8 relative">
+    <section id="projects" className="py-28 px-4 sm:px-6 lg:px-8 relative section-ambient-right overflow-hidden">
+      {/* Golden Ambient Background Glows */}
+      <div className="absolute top-1/3 -right-28 w-[500px] h-[500px] bg-[#FFC229]/10 blur-[140px] rounded-full pointer-events-none -z-10" />
+      <div className="absolute bottom-20 -left-20 w-[400px] h-[400px] bg-[#FF9D27]/08 blur-[130px] rounded-full pointer-events-none -z-10" />
+
       <div className="max-w-7xl mx-auto">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -27,8 +31,8 @@ export function Projects() {
           </div>
 
           <div className="mb-2">
-            <span className="font-handwriting text-amber-500 dark:text-amber-400 text-2xl sm:text-3xl -rotate-1 inline-block select-none">
-              ~ Ideas into reality.
+            <span className="text-amber-600 dark:text-amber-400 text-xs sm:text-sm font-semibold tracking-wider uppercase inline-block select-none">
+              Ideas into reality
             </span>
           </div>
 

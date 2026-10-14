@@ -11,7 +11,7 @@ export function Footer() {
 
   return (
     <>
-      <footer className="py-12 border-t border-black/[0.06] dark:border-white/[0.06] bg-black/[0.01] dark:bg-[#07080c] relative">
+      <footer className="py-12 gold-beam-top border-t border-black/[0.06] dark:border-amber-500/15 bg-black/[0.01] dark:bg-[#050811] relative">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex flex-col md:flex-row items-center justify-between gap-6">
             {/* Left: Branding & Attribution */}
@@ -29,8 +29,15 @@ export function Footer() {
               </p>
             </div>
 
-            {/* Middle: Audit Transparency Button */}
-            <div>
+            {/* Middle: Resume & Audit Transparency */}
+            <div className="flex items-center gap-2">
+              <a
+                href="/resume"
+                className="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-full text-xs font-medium text-zinc-600 dark:text-zinc-300 hover:text-amber-500 dark:hover:text-amber-400 border border-black/[0.08] dark:border-white/[0.08] hover:border-amber-500/40 bg-white/50 dark:bg-surface-dark/50 transition-colors"
+              >
+                <span>Resume</span>
+              </a>
+
               <button
                 type="button"
                 onClick={() => setShowAudit(true)}

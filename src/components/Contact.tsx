@@ -15,10 +15,11 @@ export function Contact() {
   };
 
   return (
-    <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8 relative">
+    <section id="contact" className="py-24 px-4 sm:px-6 lg:px-8 relative section-ambient-center overflow-hidden">
+      {/* Central Golden Glow */}
+      <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[650px] h-[450px] bg-[#FFC229]/14 blur-[150px] rounded-full pointer-events-none -z-10" />
+
       <div className="max-w-4xl mx-auto text-center">
-        {/* Glow */}
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-96 h-96 bg-amber-500/10 dark:bg-amber-500/10 blur-[120px] rounded-full pointer-events-none -z-10" />
 
         <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-600 dark:text-amber-400 text-xs font-semibold uppercase tracking-wider mb-3">
           <Sparkles className="w-3.5 h-3.5" />
@@ -26,8 +27,8 @@ export function Contact() {
         </div>
 
         <div className="mb-2">
-          <span className="font-handwriting text-amber-500 dark:text-amber-400 text-2xl sm:text-3xl font-semibold -rotate-2 inline-block select-none">
-            ~ Open to internships &amp; high-impact collaborations.
+          <span className="text-amber-600 dark:text-amber-400 text-xs sm:text-sm font-semibold tracking-wider uppercase inline-block select-none">
+            Open to internships &amp; high-impact collaborations
           </span>
         </div>
 
@@ -56,7 +57,7 @@ export function Contact() {
             href={profileData.socials.linkedin}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-2xl text-sm font-semibold text-zinc-800 dark:text-zinc-200 bg-white/70 dark:bg-surface-dark/70 hover:bg-white dark:hover:bg-surface-dark-subtle border border-black/10 dark:border-white/10 hover:border-amber-500/40 shadow-sm transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+            className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-2xl text-sm font-semibold text-zinc-800 dark:text-zinc-200 card-gold-border bg-white/70 dark:bg-surface-dark/80 hover:bg-white dark:hover:bg-surface-dark-subtle transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
           >
             <Linkedin className="w-4 h-4 text-sky-600 dark:text-sky-400" />
             <span>LinkedIn</span>
@@ -68,7 +69,7 @@ export function Contact() {
             href={profileData.socials.github}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-2xl text-sm font-semibold text-zinc-800 dark:text-zinc-200 bg-white/70 dark:bg-surface-dark/70 hover:bg-white dark:hover:bg-surface-dark-subtle border border-black/10 dark:border-white/10 hover:border-amber-500/40 shadow-sm transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+            className="inline-flex items-center gap-2.5 px-7 py-3.5 rounded-2xl text-sm font-semibold text-zinc-800 dark:text-zinc-200 card-gold-border bg-white/70 dark:bg-surface-dark/80 hover:bg-white dark:hover:bg-surface-dark-subtle transition-all focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
           >
             <Github className="w-4 h-4 text-zinc-700 dark:text-zinc-300" />
             <span>GitHub</span>

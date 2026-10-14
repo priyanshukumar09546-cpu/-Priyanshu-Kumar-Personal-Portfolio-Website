@@ -26,22 +26,23 @@ export function ProjectCard({ project, priority = false }: { project: Project; p
   };
 
   return (
-    <article className="group relative rounded-2xl border border-black/[0.08] dark:border-white/[0.08] bg-white/70 dark:bg-surface-dark/70 backdrop-blur-md overflow-hidden flex flex-col justify-between h-full transition-all duration-300 hover:border-amber-500/40 hover:-translate-y-1 hover:shadow-glow-subtle shadow-sm">
+    <article className="group relative rounded-2xl card-gold-border bg-white/70 dark:bg-surface-dark/80 backdrop-blur-md overflow-hidden flex flex-col justify-between h-full transition-all duration-300 hover:-translate-y-1">
       <div>
         {/* Visual Preview Header */}
-        <div className="relative w-full h-52 sm:h-56 bg-gradient-to-br from-zinc-100 to-zinc-200 dark:from-[#0d1017] dark:to-[#171b26] border-b border-black/[0.06] dark:border-white/[0.06] overflow-hidden flex items-center justify-center">
+        <div className="relative w-full h-52 sm:h-56 bg-gradient-to-br from-zinc-100 to-zinc-200 dark:from-[#080d17] dark:to-[#0f172a] border-b border-black/[0.06] dark:border-white/[0.08] overflow-hidden flex items-center justify-center">
           {project.image && !imgError ? (
             <div className="relative w-full h-full overflow-hidden">
               <Image
                 src={project.image}
                 alt={`${project.title} interface preview`}
                 fill
+                quality={90}
                 sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
                 priority={priority}
                 onError={() => setImgError(true)}
-                className="object-cover object-top transition-transform duration-500 group-hover:scale-105"
+                className="object-cover object-top transition-transform duration-500 group-hover:scale-105 filter contrast-[1.02]"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent pointer-events-none" />
+              <div className="absolute inset-0 bg-gradient-to-t from-[#050811]/70 via-transparent to-transparent pointer-events-none" />
             </div>
           ) : (
             /* Premium Architectural Blueprint Fallback */

@@ -63,7 +63,7 @@ export const auditReportData: AuditItem[] = [
   {
     category: "Metrics",
     item: "DSA Problem Counts",
-    status: "OMITTED_UNVERIFIED",
-    details: "LeetCode / CodeChef profiles not provided. Unverified '500+ DSA problems' statistic omitted to adhere to strict truthfulness policy.",
+    status: "VERIFIED",
+    details: "Confirmed in official resume: 500+ DSA problems solved across LeetCode & CodeChef (250+ on each platform), ranked in top 20% active users.",
   },
 ];

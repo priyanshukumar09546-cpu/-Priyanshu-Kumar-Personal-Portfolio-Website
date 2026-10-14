@@ -1,7 +1,8 @@
 import React from "react";
 import Link from "next/link";
-import { ArrowLeft, Download, ExternalLink, FileText, ShieldCheck } from "lucide-react";
+import { ArrowLeft, Download, ExternalLink, ShieldCheck } from "lucide-react";
 import type { Metadata } from "next";
+import { ResumeViewer } from "./ResumeViewer";
 
 export const metadata: Metadata = {
   title: "Resume — Priyanshu Kumar | AI/ML & Full-Stack Developer",
@@ -10,11 +11,12 @@ export const metadata: Metadata = {
 
 export default function ResumePage() {
   const resumePath = "/Priyanshu_Kumar_Resume.pdf";
+  const previewImagePath = "/Priyanshu_Kumar_Resume_preview.png";
 
   return (
-    <div className="min-h-screen bg-[#090a0f] text-zinc-100 flex flex-col">
+    <div className="min-h-screen portfolio-atmosphere text-zinc-100 flex flex-col">
       {/* Top Navigation Bar */}
-      <header className="sticky top-0 z-50 px-4 sm:px-8 py-3.5 bg-[#11141e]/90 backdrop-blur-xl border-b border-white/[0.08] flex items-center justify-between shadow-lg">
+      <header className="sticky top-0 z-50 px-4 sm:px-8 py-3.5 bg-[#0a0f1d]/90 backdrop-blur-xl border-b border-amber-500/15 flex items-center justify-between shadow-[0_4px_25px_rgba(0,0,0,0.5)] gold-beam-top">
         <div className="flex items-center gap-3">
           <Link
             href="/"
@@ -59,30 +61,7 @@ export default function ResumePage() {
 
       {/* Main Document Viewer */}
       <main className="flex-1 w-full max-w-6xl mx-auto p-3 sm:p-6 flex flex-col">
-        <div className="relative flex-1 w-full min-h-[75vh] sm:min-h-[82vh] rounded-2xl overflow-hidden border border-white/10 bg-[#161a26] shadow-2xl flex flex-col">
-          <iframe
-            src={`${resumePath}#view=FitH`}
-            title="Priyanshu Kumar Resume"
-            className="w-full flex-1 min-h-[75vh] sm:min-h-[82vh] border-0"
-          />
-
-          {/* Mobile Fallback Overlay if browser doesn't render iframe PDF */}
-          <noscript>
-            <div className="p-8 text-center">
-              <p className="text-sm text-zinc-300 mb-4">
-                Your browser may not support inline PDF viewing.
-              </p>
-              <a
-                href={resumePath}
-                download="Priyanshu_Kumar_Resume.pdf"
-                className="inline-flex items-center gap-2 px-5 py-2.5 rounded-xl bg-amber-400 text-zinc-950 text-sm font-semibold"
-              >
-                <Download className="w-4 h-4" />
-                <span>Download PDF Instead</span>
-              </a>
-            </div>
-          </noscript>
-        </div>
+        <ResumeViewer resumePath={resumePath} previewImagePath={previewImagePath} />
 
         {/* Bottom Helper Bar */}
         <div className="mt-3 text-center text-xs text-zinc-500 flex items-center justify-center gap-3">

@@ -12,7 +12,7 @@ import { Footer } from "@/components/Footer";
 
 export default function Home() {
   return (
-    <div className="relative min-h-screen bg-background-light dark:bg-background-dark text-zinc-900 dark:text-zinc-100 selection:bg-amber-500/25">
+    <div className="relative min-h-screen portfolio-atmosphere text-zinc-900 dark:text-zinc-100 selection:bg-amber-500/25">
       <Navbar />
       <main>
         <Hero />

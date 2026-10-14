@@ -7,8 +7,11 @@ import { experienceData } from "@/data/experience";
 
 export function Experience() {
   return (
-    <section id="experience" className="py-24 px-4 sm:px-6 lg:px-8 relative">
-      <div className="max-w-5xl mx-auto">
+    <section id="experience" className="py-24 px-4 sm:px-6 lg:px-8 relative section-ambient-left overflow-hidden">
+      {/* Golden Ambient Background Glows */}
+      <div className="absolute top-1/3 -left-24 w-[480px] h-[480px] bg-[#FFC229]/10 blur-[130px] rounded-full pointer-events-none -z-10" />
+
+      <div className="max-w-4xl mx-auto">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <div className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full border border-amber-500/30 bg-amber-500/10 text-amber-600 dark:text-amber-400 text-xs font-semibold uppercase tracking-wider mb-3">
@@ -16,8 +19,8 @@ export function Experience() {
             <span>Career Milestones</span>
           </div>
           <div className="mb-2">
-            <span className="font-handwriting text-amber-500 dark:text-amber-400 text-2xl sm:text-3xl font-semibold -rotate-1 inline-block select-none">
-              ~ Demonstrated execution.
+            <span className="text-amber-600 dark:text-amber-400 text-xs sm:text-sm font-semibold tracking-wider uppercase inline-block select-none">
+              Demonstrated execution
             </span>
           </div>
           <h2 className="section-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-zinc-950 dark:text-white mb-4">
@@ -29,23 +32,23 @@ export function Experience() {
         </div>
 
         {/* Vertical Timeline */}
-        <div className="relative border-l border-zinc-200 dark:border-zinc-800 ml-4 sm:ml-8 space-y-12">
+        <div className="relative border-l border-amber-500/30 dark:border-amber-400/20 ml-4 sm:ml-8 space-y-12">
           {experienceData.map((item, idx) => (
             <motion.div
               key={item.id}
-              initial={{ opacity: 0, x: -15 }}
-              whileInView={{ opacity: 1, x: 0 }}
+              initial={{ opacity: 0, y: 15 }}
+              whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="relative pl-6 sm:pl-10"
             >
-              {/* Timeline Marker */}
-              <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-white dark:bg-[#090a0f] border-2 border-amber-500 shadow-glow-subtle flex items-center justify-center">
-                <span className="w-1.5 h-1.5 rounded-full bg-amber-500" />
+              {/* Timeline Marker with Golden Illumination */}
+              <div className="absolute -left-[9px] top-1.5 w-4 h-4 rounded-full bg-[#050811] border-2 border-amber-400 shadow-[0_0_12px_rgba(255,194,41,0.5)] flex items-center justify-center">
+                <span className="w-1.5 h-1.5 rounded-full bg-amber-400" />
               </div>
 
               {/* Card Container */}
-              <div className="p-6 sm:p-8 rounded-2xl border border-black/[0.08] dark:border-white/[0.08] bg-white/70 dark:bg-surface-dark/70 backdrop-blur-md shadow-sm hover:border-amber-500/30 transition-all duration-300">
+              <div className="p-6 sm:p-8 rounded-2xl card-gold-border bg-white/70 dark:bg-surface-dark/80 backdrop-blur-md">
                 <div className="flex flex-wrap items-center justify-between gap-2 mb-3">
                   <div>
                     <span className="text-xs font-mono font-medium text-amber-600 dark:text-amber-400 uppercase tracking-wider">

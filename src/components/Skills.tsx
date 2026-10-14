@@ -28,7 +28,10 @@ export function Skills() {
   };
 
   return (
-    <section id="skills" className="py-24 px-4 sm:px-6 lg:px-8 relative">
+    <section id="skills" className="py-24 px-4 sm:px-6 lg:px-8 relative section-ambient-center overflow-hidden">
+      {/* Golden Ambient Background Glows */}
+      <div className="absolute top-1/4 left-1/2 -translate-x-1/2 w-[600px] h-[350px] bg-[#FFC229]/09 blur-[140px] rounded-full pointer-events-none -z-10" />
+
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
@@ -37,8 +40,8 @@ export function Skills() {
             <span>Technical Capabilities</span>
           </div>
           <div className="mb-2">
-            <span className="font-handwriting text-amber-500 dark:text-amber-400 text-2xl sm:text-3xl font-semibold -rotate-1 inline-block select-none">
-              ~ Tools of the craft.
+            <span className="text-amber-600 dark:text-amber-400 text-xs sm:text-sm font-semibold tracking-wider uppercase inline-block select-none">
+              Tools of the craft
             </span>
           </div>
           <h2 className="section-title text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-black text-zinc-950 dark:text-white mb-4">
@@ -58,7 +61,7 @@ export function Skills() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: idx * 0.05 }}
-              className="p-6 rounded-2xl border border-black/[0.08] dark:border-white/[0.08] bg-white/70 dark:bg-surface-dark/70 backdrop-blur-md hover:border-amber-500/30 transition-all duration-300 shadow-sm flex flex-col justify-between"
+              className="p-6 rounded-2xl card-gold-border bg-white/70 dark:bg-surface-dark/80 backdrop-blur-md flex flex-col justify-between"
             >
               <div>
                 <div className="flex items-center gap-3 mb-3">

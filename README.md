@@ -18,6 +18,30 @@ Designed to wow engineering recruiters, internship directors, and technical coll
 
 ---
 
+## 📸 Genuine Website Previews & Gallery
+
+Genuine captures of the responsive Next.js portfolio running locally and deployed to production:
+
+### Desktop Experience (1440 × 900)
+| Hero / Overview | About & Academic |
+|:---:|:---:|
+| ![Home Desktop](screenshots/home-desktop.png) | ![About Desktop](screenshots/about-desktop.png) |
+
+| Projects & Live Systems | Education & Qualifications |
+|:---:|:---:|
+| ![Projects Desktop](screenshots/projects-desktop.png) | ![Education Desktop](screenshots/education-desktop.png) |
+
+| Verified Certifications & Honors |
+|:---:|
+| ![Certifications Desktop](screenshots/certifications-desktop.png) |
+
+### Mobile Experience (390 × 844)
+| Mobile Hero | Mobile About |
+|:---:|:---:|
+| ![Home Mobile](screenshots/home-mobile.png) | ![About Mobile](screenshots/about-mobile.png) |
+
+---
+
 ## 🛠️ Tech Stack
 
 | Layer | Technology |
@@ -119,15 +143,15 @@ This portfolio is configured for zero-config deployment on **Vercel**:
    git add .
    git commit -m "feat: complete Priyanshu Kumar personal portfolio"
    ```
-2. Create a new repository on your GitHub account (`priyanshukumar09546-cpu`):
+2. Connect to your GitHub repository (`priyanshukumar09546-cpu`):
    ```bash
-   git remote add origin https://github.com/priyanshukumar09546-cpu/priyanshu-portfolio.git
+   git remote add origin https://github.com/priyanshukumar09546-cpu/-Priyanshu-Kumar-Personal-Portfolio-Website.git
    git branch -M main
    git push -u origin main
    ```
 3. Visit [vercel.com](https://vercel.com) and log in with GitHub.
 4. Click **"Add New..."** → **"Project"**.
-5. Select `priyanshu-portfolio` from your GitHub repositories.
+5. Select `-Priyanshu-Kumar-Personal-Portfolio-Website` from your GitHub repositories.
 6. Under **Build and Output Settings**, Vercel will automatically detect `Next.js`.
 7. Click **"Deploy"**. Your portfolio will be live in under 60 seconds with SSL and global CDN caching.
 

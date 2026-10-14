@@ -28,3 +28,6 @@ yarn-error.log*
 
 # typescript
 *.tsbuildinfo
+
+# scratch data
+scratch_certs/

@@ -4,10 +4,12 @@ export interface EducationItem {
   institution: string;
   boardOrAffiliation: string;
   period: string;
+  status?: string;
   score?: string;
   location: string;
   description: string;
-  highlights: string[];
+  tags: string[];
+  logo: string;
 }
 
 export const educationData: EducationItem[] = [
@@ -17,14 +19,19 @@ export const educationData: EducationItem[] = [
     institution: "ABES Engineering College, Ghaziabad",
     boardOrAffiliation: "Dr. A.P.J. Abdul Kalam Technical University (AKTU)",
     period: "2024 – 2028",
+    status: "Currently Pursuing",
     location: "Ghaziabad, Uttar Pradesh, India",
     description:
       "Four-year undergraduate engineering degree focusing on core computer science foundations, algorithm engineering, modern web applications, and artificial intelligence systems.",
-    highlights: [
-      "Rigorous coursework in Data Structures & Algorithms, Object-Oriented Programming, and DBMS.",
-      "Active participant in technical student clubs and developer communities.",
-      "Hands-on project development bridging theoretical machine learning with full-stack delivery.",
+    tags: [
+      "Data Structures & Algorithms",
+      "Object-Oriented Programming",
+      "DBMS",
+      "Operating Systems",
+      "Computer Networks",
+      "AI & ML",
     ],
+    logo: "/images/education/abes-logo.png",
   },
   {
     id: "class-xii",
@@ -34,8 +41,15 @@ export const educationData: EducationItem[] = [
     period: "2022",
     score: "80%",
     location: "Hapur, Uttar Pradesh, India",
-    description: "Completed higher secondary education with a strong focus on Science, Mathematics, and Computer Science.",
-    highlights: ["Mathematics, Physics, Chemistry, and Computer Science foundations."],
+    description:
+      "Completed higher secondary education with a strong focus on Science, Mathematics, and Computer Science.",
+    tags: [
+      "Mathematics",
+      "Physics",
+      "Chemistry",
+      "Computer Science",
+    ],
+    logo: "/images/education/tagore-logo.jpg",
   },
   {
     id: "class-x",
@@ -45,7 +59,19 @@ export const educationData: EducationItem[] = [
     period: "2020",
     score: "75%",
     location: "Hapur, Uttar Pradesh, India",
-    description: "Completed secondary school examinations with comprehensive academic performance across sciences and mathematics.",
-    highlights: ["Strong academic background in secondary mathematics and science fundamentals."],
+    description:
+      "Completed secondary school examinations with a strong academic foundation across core subjects.",
+    tags: [
+      "Mathematics",
+      "Science",
+      "English",
+      "Social Science",
+    ],
+    logo: "/images/education/tagore-logo.jpg",
   },
 ];
+
+export const educationQuote = {
+  text: "Continuous learning and a strong foundation in fundamentals drive my passion for building real-world solutions.",
+  author: "Priyanshu Kumar",
+};

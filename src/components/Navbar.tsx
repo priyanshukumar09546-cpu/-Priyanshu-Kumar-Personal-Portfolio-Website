@@ -13,6 +13,7 @@ const NAV_ITEMS = [
   { label: "Skills", href: "#skills" },
   { label: "Experience", href: "#experience" },
   { label: "Education", href: "#education" },
+  { label: "Certifications", href: "#certifications" },
   { label: "Contact", href: "#contact" },
 ];
 
@@ -105,7 +106,7 @@ export function Navbar() {
             <ThemeToggle />
             <Link
               href="/resume"
-              className="inline-flex items-center gap-1.5 px-3.5 py-1.5 rounded-xl text-xs font-medium text-amber-950 dark:text-amber-300 bg-amber-400/90 dark:bg-amber-500/20 hover:bg-amber-400 dark:hover:bg-amber-500/30 border border-amber-400/40 dark:border-amber-400/30 transition-all duration-200 shadow-sm hover:shadow-glow-subtle focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
+              className="inline-flex items-center gap-1.5 px-4 py-1.5 rounded-full text-xs font-bold text-zinc-950 bg-amber-400 hover:bg-amber-300 transition-all duration-200 shadow-md hover:shadow-glow-amber focus:outline-none focus-visible:ring-2 focus-visible:ring-amber-500"
             >
               <FileText className="w-3.5 h-3.5" />
               <span>Resume</span>
