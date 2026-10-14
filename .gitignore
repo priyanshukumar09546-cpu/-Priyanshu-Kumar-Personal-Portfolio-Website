@@ -31,3 +31,6 @@ yarn-error.log*
 
 # scratch data
 scratch_certs/
+
+.vercel
+.env*
